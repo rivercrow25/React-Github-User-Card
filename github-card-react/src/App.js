@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios'
+import MainCard from './component/MainCard'
 import './App.css';
 
 class App extends React.Component {
@@ -13,6 +14,7 @@ class App extends React.Component {
   componentDidMount() {
     axios.get('https://api.github.com/users/rivercrow25')
       .then(response => {
+        // console.log(response)
         this.setState({
           data: response.data
         })
@@ -23,10 +25,11 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state)
+
     return (
       <div className="App">
         <h1>github friends!</h1>
+        <MainCard data={this.state.data} />
 
       </div>
     );
