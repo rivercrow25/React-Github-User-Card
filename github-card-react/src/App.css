@@ -28,11 +28,34 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img{
+  width: 20%;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  margin: 0 10%;
+  background-color: midnightblue;
+  color: white;
+  padding: 5%;
+  border: black solid 2px;
+  margin-bottom: 5%;
+}
+
+.followers{
+  display: flex;
+  justify-content: space-evenly;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  
+  color: white;
+  
+}
+
+.main{
+  background-color: white;
+  color: black;
 }

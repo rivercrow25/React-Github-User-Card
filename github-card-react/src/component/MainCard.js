@@ -6,9 +6,8 @@ class MainCard extends React.Component {
         super()
     }
     render() {
-        console.log('inside main card ', this.props)
         return (
-            <div>
+            <div className='container main'>
                 <img src={this.props.data.avatar_url} alt='pciture of user' />
                 <div>
                     <h2>User: {this.props.data.login}</h2>
